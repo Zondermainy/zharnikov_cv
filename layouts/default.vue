@@ -315,7 +315,7 @@ main {
 .footer {
   border-top: 1px solid var(--border);
   padding: var(--space-lg) 0;
-  margin-top: var(--space-3xl);
+  margin-top: var(--space-lg);
 }
 
 .footer-inner {
