@@ -4,7 +4,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   app: {
-    baseURL: '/zondermainy_cv/',
     head: {
       title: 'Nikolay Zharnikov — DevOps Engineer',
       meta: [
