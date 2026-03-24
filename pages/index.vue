@@ -22,9 +22,9 @@
               <span class="command typing-cursor">{{ t('hero.tagline') }}</span>
             </div>
             
-            <div class="terminal-line" style="margin-top: 32px;">
+            <div class="terminal-line" style="margin-top: 24px;">
               <span class="prompt">$</span>
-              <span class="command comment"># {{ t('contact.subtitle') }}</span>
+              <span class="command comment">{{ t('contact.subtitle') }}</span>
             </div>
             <div class="contact-links">
               <a href="mailto:zharnikov.nikolay@gmail.com" class="contact-link">
