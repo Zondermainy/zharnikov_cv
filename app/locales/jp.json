@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "greeting": "はじめまして",
+    "name": "ジャルニコフ ニコライ",
+    "position": "DevOpsエンジニア",
+    "tagline": "安定したインフラを構築し、すべてを自動化します"
+  },
+  "nav": {
+    "experience": "経験",
+    "skills": "スキル",
+    "contact": "連絡先"
+  },
+  "experience": {
+    "title": "// 職歴",
+    "period": "期間",
+    "present": "現在"
+  },
+  "jobs": {
+    "dns": {
+      "company": "DNS Technologies",
+      "position": "DevOpsエンジニア",
+      "period": "2024年6月 — 現在",
+      "description": "オブザーバビリティと監視",
+      "achievements": [
+        "VictoriaMetrics/Grafanaベースのビジネスプロセスモニタリングシステムを開発し、複雑なPromQLクエリを使用して内部サービスの生データを分析ダッシュボードに変換（RPS、クォンタイル、集約）",
+        "GrafanaとAlertmanager経由でTelegramアラートを構成",
+        "ElasticsearchからOpenSearchへの移行時のインデックス構造を再設計",
+        "内部マイクロサービス用のカスタムHelmチャートをゼロから開発し、外部ソリューション（GitLab AI Gateway、KeepHQ）を適応",
+        "アウトtageレジストリの維持や技術的ポストモーテムの作成を含む систематический incident handling processを実施"
+      ]
+    },
+    "shardmc": {
+      "company": "shardmc.ru",
+      "position": "DevOpsエンジニア",
+      "period": "2022年9月 — 現在",
+      "description": "インフラと自動化",
+      "achievements": [
+        "Proxmoxベースのサーバーインフラを設計・展開、TerraformでVMをプロビジョニング、Ansibleで構成管理",
+        "K3sクラスターを展開、Dockerでコンテナ化を実装し、高負荷Javaサービスのオーケストレーションを実施",
+        "カスタムGitLabランナーを使用したセルフホストGitLabを展開、Dockerfile линтерとHarborでのTrivyスキャンを含む安全なCI/CDパイプラインを実現",
+        "ArgoCDを使用したクラスター展開の自動化",
+        "MySQL、PostgreSQL、Redisの管理とパフォーマンスチューニング",
+        "増分コピーとデータ重複排除機能を備えたResticを使用したバックアップ 시스템을実装"
+      ]
+    }
+  },
+  "skills": {
+    "title": "// 技術スタック",
+    "level": "習熟度"
+  },
+  "techCategories": {
+    "infrastructure": "インフラ",
+    "containerization": "コンテナ化",
+    "cicd": "CI/CD",
+    "monitoring": "監視",
+    "databases": "データベース",
+    "automation": "自動化"
+  },
+  "contact": {
+    "title": "// お問い合わせ",
+    "subtitle": "お気軽にご連絡ください"
+  },
+  "footer": {
+    "built": "Nuxtで構築"
+  }
+}
