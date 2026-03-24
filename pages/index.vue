@@ -346,7 +346,7 @@ const skillCategories = [
 
 @media (max-width: 480px) {
   .terminal-body {
-    padding: var(--space-md);
+    padding: var(--space-sm);
   }
   
   .output-name {
@@ -358,7 +358,7 @@ const skillCategories = [
   }
   
   .terminal-title {
-    display: none;
+    font-size: 10px;
   }
 }
 </style>
