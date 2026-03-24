@@ -36,8 +36,8 @@ body {
 ::-webkit-scrollbar-thumb:hover { background: var(--text-secondary); }
 a { color: var(--accent-blue); text-decoration: none; transition: color 0.2s ease; }
 a:hover { color: var(--accent-green); }
-.container { max-width: 900px; margin: 0 auto; padding: 0 var(--space-lg); }
-.section { padding: var(--space-3xl) 0; }
+.container { max-width: 900px; margin: 0 auto; padding: 0 var(--space-md); }
+.section { padding: var(--space-md) 0; }
 
 .terminal {
   background: var(--bg-secondary);
@@ -65,7 +65,7 @@ a:hover { color: var(--accent-green); }
   color: var(--text-secondary);
 }
 .terminal-body {
-  padding: var(--space-lg);
+  padding: var(--space-md);
   font-family: var(--font-mono);
 }
 

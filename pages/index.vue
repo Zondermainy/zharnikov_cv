@@ -140,11 +140,23 @@ const skillCategories = [
 
 <style scoped>
 .page {
-  padding-bottom: var(--space-3xl);
+  padding-bottom: var(--space-lg);
+}
+
+.section {
+  padding: var(--space-lg) 0;
 }
 
 .hero {
-  padding-top: var(--space-3xl);
+  padding-top: var(--space-lg);
+}
+
+.skills-section {
+  padding: var(--space-lg) 0;
+}
+
+.section-title {
+  margin-bottom: var(--space-lg);
 }
 
 .terminal-line {
@@ -230,8 +242,8 @@ const skillCategories = [
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: var(--space-xl);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-md);
 }
 
 .contact-terminal {

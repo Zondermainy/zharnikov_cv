@@ -43,8 +43,8 @@ defineProps<{
 <style scoped>
 .experience-card {
   display: flex;
-  gap: var(--space-lg);
-  margin-bottom: var(--space-xl);
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
 }
 
 .card-timeline {
