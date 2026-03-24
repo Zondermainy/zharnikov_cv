@@ -117,8 +117,8 @@ const { t, locale, messages } = useI18n()
 const jobs = computed(() => {
   const loc = locale.value as keyof typeof messages
   return {
-    dns: messages[loc].jobs.dns,
-    shardmc: messages[loc].jobs.shardmc
+    shardmc: messages[loc].jobs.shardmc,
+    dns: messages[loc].jobs.dns
   }
 })
 
@@ -222,16 +222,24 @@ const skillCategories = [
 /* Section Titles */
 .section-title {
   font-family: var(--font-mono);
-  font-size: 24px;
+  font-size: 28px;
   color: var(--accent-green);
   margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-md);
+  border-bottom: 2px solid var(--accent-green);
+  display: inline-block;
 }
 
 /* Skills */
+.skills-section {
+  background: var(--bg-primary);
+  padding: var(--space-3xl) 0;
+}
+
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-xl);
 }
 
 /* Contact */
@@ -315,6 +323,7 @@ const skillCategories = [
   
   .skills-grid {
     grid-template-columns: 1fr;
+    gap: var(--space-md);
   }
   
   .section {
