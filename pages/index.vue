@@ -1,6 +1,5 @@
 <template>
   <div class="page">
-    <!-- Hero Section -->
     <section class="hero section">
       <div class="container">
         <div class="terminal">
@@ -46,11 +45,9 @@
       </div>
     </section>
 
-    <!-- Experience Section -->
     <section id="experience" class="experience section">
       <div class="container">
         <h2 class="section-title">{{ t('experience.title') }}</h2>
-        
         <div class="timeline">
           <ExperienceCard
             v-for="(job, key) in jobs"
@@ -61,11 +58,9 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
+    <section id="skills" class="skills-section">
       <div class="container">
         <h2 class="section-title">{{ t('skills.title') }}</h2>
-        
         <div class="skills-grid">
           <SkillCategory
             v-for="category in skillCategories"
@@ -76,7 +71,6 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact section">
       <div class="container">
         <div class="terminal">
@@ -117,36 +111,18 @@ const { t, locale, messages } = useI18n()
 const jobs = computed(() => {
   const loc = locale.value as keyof typeof messages
   return {
-    dns: messages[loc].jobs.dns,
-    shardmc: messages[loc].jobs.shardmc
+    shardmc: messages[loc].jobs.shardmc,
+    dns: messages[loc].jobs.dns
   }
 })
 
 const skillCategories = [
-  { 
-    key: 'infrastructure',
-    skills: ['Proxmox', 'Terraform', 'Ansible', 'Kubernetes (K3s)']
-  },
-  {
-    key: 'containerization',
-    skills: ['Docker', 'Harbor', 'Helm']
-  },
-  {
-    key: 'cicd',
-    skills: ['GitLab', 'ArgoCD', 'CI/CD Pipelines']
-  },
-  {
-    key: 'monitoring',
-    skills: ['Grafana', 'VictoriaMetrics', 'Alertmanager', 'OpenSearch']
-  },
-  {
-    key: 'databases',
-    skills: ['MySQL', 'PostgreSQL', 'Redis']
-  },
-  {
-    key: 'automation',
-    skills: ['Bash', 'Restic', 'Trivy']
-  }
+  { key: 'infrastructure', skills: ['Proxmox', 'Terraform', 'Ansible', 'Kubernetes (K3s)'] },
+  { key: 'containerization', skills: ['Docker', 'Harbor', 'Helm'] },
+  { key: 'cicd', skills: ['GitLab', 'ArgoCD', 'CI/CD Pipelines'] },
+  { key: 'monitoring', skills: ['Grafana', 'VictoriaMetrics', 'Alertmanager', 'OpenSearch'] },
+  { key: 'databases', skills: ['MySQL', 'PostgreSQL', 'Redis'] },
+  { key: 'automation', skills: ['Bash', 'Restic', 'Trivy'] }
 ]
 </script>
 
@@ -155,7 +131,6 @@ const skillCategories = [
   padding-bottom: var(--space-3xl);
 }
 
-/* Hero */
 .hero {
   padding-top: var(--space-3xl);
 }
@@ -219,22 +194,27 @@ const skillCategories = [
   font-size: 16px;
 }
 
-/* Section Titles */
 .section-title {
   font-family: var(--font-mono);
-  font-size: 24px;
+  font-size: 28px;
   color: var(--accent-green);
   margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-md);
+  border-bottom: 2px solid var(--accent-green);
+  display: inline-block;
 }
 
-/* Skills */
+.skills-section {
+  background: var(--bg-primary);
+  padding: var(--space-3xl) 0;
+}
+
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-xl);
 }
 
-/* Contact */
 .contact-terminal {
   text-align: center;
 }
@@ -286,12 +266,68 @@ const skillCategories = [
 }
 
 @media (max-width: 640px) {
+  .hero {
+    padding-top: var(--space-xl);
+  }
+  
   .output-name {
     font-size: 22px;
+    margin-left: var(--space-md);
   }
   
   .output-position {
     font-size: 16px;
+    margin-left: var(--space-md);
+  }
+  
+  .contact-links {
+    margin-left: var(--space-md);
+  }
+  
+  .contact-link {
+    font-size: 12px;
+    word-break: break-all;
+  }
+  
+  .section-title {
+    font-size: 18px;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  
+  .section {
+    padding: var(--space-xl) 0;
+  }
+  
+  .terminal-title {
+    font-size: 10px;
+  }
+  
+  .command-block {
+    width: 100%;
+    justify-content: center;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminal-body {
+    padding: var(--space-md);
+  }
+  
+  .output-name {
+    font-size: 18px;
+  }
+  
+  .output-position {
+    font-size: 14px;
+  }
+  
+  .terminal-title {
+    display: none;
   }
 }
 </style>

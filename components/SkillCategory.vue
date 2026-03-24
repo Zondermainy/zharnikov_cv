@@ -1,22 +1,13 @@
 <template>
-  <div class="skill-category terminal">
-    <div class="terminal-header">
-      <div class="terminal-btn red"></div>
-      <div class="terminal-btn yellow"></div>
-      <div class="terminal-btn green"></div>
-      <span class="terminal-title">{{ category.key }}.json</span>
+  <div class="skill-category">
+    <div class="category-header">
+      <span class="category-icon">{{ getIcon(category.key) }}</span>
+      <span class="category-name">{{ t(`techCategories.${category.key}`) }}</span>
     </div>
-    <div class="terminal-body">
-      <div class="category-header">
-        <span class="bracket">{</span>
-        <span class="category-name">{{ t(`techCategories.${category.key}`) }}</span>
-        <span class="bracket">}</span>
-      </div>
-      <div class="skills-list">
-        <span class="skill-tag" v-for="skill in category.skills" :key="skill">
-          {{ skill }}
-        </span>
-      </div>
+    <div class="skills-list">
+      <span class="skill-tag" v-for="skill in category.skills" :key="skill">
+        {{ skill }}
+      </span>
     </div>
   </div>
 </template>
@@ -30,22 +21,56 @@ defineProps<{
     skills: string[]
   }
 }>()
+
+const getIcon = (key: string) => {
+  const icons: Record<string, string> = {
+    infrastructure: '🖥️',
+    containerization: '📦',
+    cicd: '🔄',
+    monitoring: '📊',
+    databases: '💾',
+    automation: '⚡'
+  }
+  return icons[key] || '🔧'
+}
 </script>
 
 <style scoped>
-.category-header {
-  font-family: var(--font-mono);
-  font-size: 16px;
-  margin-bottom: var(--space-md);
+.skill-category {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: var(--space-lg);
+  transition: all 0.3s ease;
 }
 
-.bracket {
-  color: var(--accent-orange);
+.skill-category:hover {
+  border-color: var(--accent-green);
+  box-shadow: 0 0 20px rgba(63, 185, 80, 0.15);
+  transform: translateY(-2px);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--border);
+}
+
+.category-icon {
+  font-size: 28px;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
 }
 
 .category-name {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 600;
   color: var(--accent-blue);
-  margin: 0 var(--space-sm);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .skills-list {
@@ -56,17 +81,20 @@ defineProps<{
 
 .skill-tag {
   font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--accent-green);
-  background: rgba(63, 185, 80, 0.1);
-  border: 1px solid rgba(63, 185, 80, 0.3);
-  padding: 4px 10px;
-  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+  background: linear-gradient(135deg, rgba(63, 185, 80, 0.2) 0%, rgba(88, 166, 255, 0.1) 100%);
+  border: 1px solid var(--accent-green);
+  padding: 8px 14px;
+  border-radius: 6px;
   transition: all 0.2s ease;
+  cursor: default;
 }
 
 .skill-tag:hover {
-  background: rgba(63, 185, 80, 0.2);
-  border-color: var(--accent-green);
+  background: linear-gradient(135deg, rgba(63, 185, 80, 0.35) 0%, rgba(88, 166, 255, 0.2) 100%);
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(63, 185, 80, 0.3);
 }
 </style>

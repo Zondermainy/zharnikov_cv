@@ -144,7 +144,7 @@ const messages = {
         period: '2024年6月 — 現在',
         description: 'オブザーバビリティと監視',
         achievements: [
-          'VictoriaMetrics/Grafanaベースのビジネスプロセスモニタリングシステム了我',
+          'VictoriaMetrics/Grafanaベースのビジネスプロセスモニタリングシステム了你',
           'GrafanaとAlertmanager経由でTelegramアラートを構成',
           'ElasticsearchからOpenSearchへの移行時のインデックス構造を再設計',
           'カスタムHelmチャートをゼロから開発',

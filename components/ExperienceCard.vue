@@ -137,5 +137,38 @@ defineProps<{
   .position {
     font-size: 16px;
   }
+  
+  .card-header {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+  
+  .period {
+    font-size: 11px;
+  }
+  
+  .achievement {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  
+  .text {
+    font-size: 13px;
+  }
+  
+  .description {
+    font-size: 13px;
+  }
+  
+  .terminal-body {
+    padding: var(--space-md);
+  }
+  
+  .terminal-title {
+    font-size: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 </style>

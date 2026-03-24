@@ -20,9 +20,5 @@ export default defineNuxtConfig({
     }
   },
 
-  css: ['~/assets/css/main.css'],
-  
-  future: {
-    compatibilityVersion: 4
-  }
+  css: ['~/assets/css/main.css']
 })
