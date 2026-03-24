@@ -130,7 +130,7 @@ const messages = {
       telegram: 'Telegram',
       linkedin: 'LinkedIn',
       github: 'GitHub',
-      sendMail: 'написать',
+      sendMail: 'email',
       openTelegram: 'telegram',
       viewLinkedin: 'linkedin',
       viewGithub: 'github'
