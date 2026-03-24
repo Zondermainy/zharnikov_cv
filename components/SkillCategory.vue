@@ -28,8 +28,8 @@ const getIcon = (key: string) => {
     containerization: '📦',
     cicd: '🔄',
     monitoring: '📊',
-    databases: '💾',
-    automation: '⚡'
+    kubernetes: '☸️',
+    dba: '🗄️'
   }
   return icons[key] || '🔧'
 }

@@ -50,8 +50,8 @@ const messages = {
       containerization: 'Containerization',
       cicd: 'CI/CD',
       monitoring: 'Monitoring',
-      databases: 'Databases',
-      automation: 'Automation'
+      kubernetes: 'Kubernetes',
+      dba: 'DBA & Automation'
     },
     contact: {
       title: '// Get in Touch',
@@ -120,8 +120,8 @@ const messages = {
       containerization: 'Контейнеризация',
       cicd: 'CI/CD',
       monitoring: 'Мониторинг',
-      databases: 'Базы данных',
-      automation: 'Автоматизация'
+      kubernetes: 'Kubernetes',
+      dba: 'DBA & Автоматизация'
     },
     contact: {
       title: '// Связаться',
@@ -189,8 +189,8 @@ const messages = {
       containerization: 'コンテナ化',
       cicd: 'CI/CD',
       monitoring: '監視',
-      databases: 'データベース',
-      automation: '自動化'
+      kubernetes: 'Kubernetes',
+      dba: 'DBA & 自動化'
     },
     contact: {
       title: '// お問い合わせ',

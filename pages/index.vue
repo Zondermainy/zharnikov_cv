@@ -129,12 +129,12 @@ const jobs = computed(() => {
 })
 
 const skillCategories = [
-  { key: 'infrastructure', skills: ['Proxmox', 'Terraform', 'Ansible', 'Kubernetes (K3s)'] },
-  { key: 'containerization', skills: ['Docker', 'Harbor', 'Helm'] },
-  { key: 'cicd', skills: ['GitLab', 'ArgoCD', 'CI/CD Pipelines'] },
-  { key: 'monitoring', skills: ['Grafana', 'VictoriaMetrics', 'Alertmanager', 'OpenSearch'] },
-  { key: 'databases', skills: ['MySQL', 'PostgreSQL', 'Redis'] },
-  { key: 'automation', skills: ['Bash', 'Restic', 'Trivy'] }
+  { key: 'infrastructure', skills: ['Proxmox', 'ESXi', 'Linux', 'Terraform', 'Ansible', 'Puppet'] },
+  { key: 'containerization', skills: ['Docker', 'Podman', 'Harbor'] },
+  { key: 'cicd', skills: ['GitLab CI', 'ArgoCD'] },
+  { key: 'monitoring', skills: ['Grafana', 'VictoriaMetrics', 'Prometheus', 'Alertmanager', 'ELK'] },
+  { key: 'kubernetes', skills: ['K8s', 'K3s', 'Helm'] },
+  { key: 'dba', skills: ['MySQL', 'PostgreSQL', 'Redis', 'SQL', 'Bash', 'Python'] }
 ]
 </script>
 
