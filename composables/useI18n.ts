@@ -55,7 +55,15 @@ const messages = {
     },
     contact: {
       title: '// Get in Touch',
-      subtitle: 'Feel free to reach out'
+      subtitle: 'Feel free to reach out',
+      email: 'Email',
+      telegram: 'Telegram',
+      linkedin: 'LinkedIn',
+      github: 'GitHub',
+      sendMail: 'send mail',
+      openTelegram: 'open telegram',
+      viewLinkedin: 'view linkedin',
+      viewGithub: 'view github'
     },
     footer: {
       built: 'Built with Nuxt'
@@ -117,7 +125,15 @@ const messages = {
     },
     contact: {
       title: '// Связаться',
-      subtitle: 'Буду рад обратной связи'
+      subtitle: 'Буду рад обратной связи',
+      email: 'Email',
+      telegram: 'Telegram',
+      linkedin: 'LinkedIn',
+      github: 'GitHub',
+      sendMail: 'написать',
+      openTelegram: 'telegram',
+      viewLinkedin: 'linkedin',
+      viewGithub: 'github'
     },
     footer: {
       built: 'Создано на Nuxt'
@@ -178,7 +194,15 @@ const messages = {
     },
     contact: {
       title: '// お問い合わせ',
-      subtitle: 'お気軽にご連絡ください'
+      subtitle: 'お気軽にご連絡ください',
+      email: 'メール',
+      telegram: 'テレグラム',
+      linkedin: 'LinkedIn',
+      github: 'GitHub',
+      sendMail: 'メールを送る',
+      openTelegram: 'テレグラムを開く',
+      viewLinkedin: 'LinkedInを見る',
+      viewGithub: 'GitHubを見る'
     },
     footer: {
       built: 'Nuxtで構築'

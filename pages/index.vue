@@ -29,15 +29,23 @@
             <div class="contact-links">
               <a href="mailto:zharnikov.nikolay@gmail.com" class="contact-link">
                 <span class="link-icon">📧</span>
+                <span class="link-label">{{ t('contact.email') }}:</span>
                 <span class="link-text">zharnikov.nikolay@gmail.com</span>
               </a>
               <a href="https://t.me/Zondermainy" target="_blank" class="contact-link">
                 <span class="link-icon">✈️</span>
+                <span class="link-label">{{ t('contact.telegram') }}:</span>
                 <span class="link-text">@Zondermainy</span>
               </a>
               <a href="https://www.linkedin.com/in/nikolay-zharnikov-4819a83b3/" target="_blank" class="contact-link">
                 <span class="link-icon">💼</span>
-                <span class="link-text">LinkedIn</span>
+                <span class="link-label">{{ t('contact.linkedin') }}:</span>
+                <span class="link-text">Nikolay Zharnikov</span>
+              </a>
+              <a href="https://github.com/Zondermainy" target="_blank" class="contact-link">
+                <span class="link-icon">🐙</span>
+                <span class="link-label">{{ t('contact.github') }}:</span>
+                <span class="link-text">Zondermainy</span>
               </a>
             </div>
           </div>
@@ -87,15 +95,19 @@
             <div class="contact-commands">
               <a href="mailto:zharnikov.nikolay@gmail.com" class="command-block">
                 <span class="cmd-prompt">→</span>
-                <span class="cmd-text">send mail</span>
+                <span class="cmd-text">{{ t('contact.sendMail') }}</span>
               </a>
               <a href="https://t.me/Zondermainy" target="_blank" class="command-block">
                 <span class="cmd-prompt">→</span>
-                <span class="cmd-text">open telegram</span>
+                <span class="cmd-text">{{ t('contact.openTelegram') }}</span>
               </a>
               <a href="https://www.linkedin.com/in/nikolay-zharnikov-4819a83b3/" target="_blank" class="command-block">
                 <span class="cmd-prompt">→</span>
-                <span class="cmd-text">view linkedin</span>
+                <span class="cmd-text">{{ t('contact.viewLinkedin') }}</span>
+              </a>
+              <a href="https://github.com/Zondermainy" target="_blank" class="command-block">
+                <span class="cmd-prompt">→</span>
+                <span class="cmd-text">{{ t('contact.viewGithub') }}</span>
               </a>
             </div>
           </div>
@@ -192,6 +204,13 @@ const skillCategories = [
 
 .link-icon {
   font-size: 16px;
+}
+
+.link-label {
+  color: var(--text-secondary);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .section-title {
