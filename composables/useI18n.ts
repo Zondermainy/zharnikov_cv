@@ -60,10 +60,10 @@ const messages = {
       telegram: 'Telegram',
       linkedin: 'LinkedIn',
       github: 'GitHub',
-      sendMail: 'send mail',
-      openTelegram: 'open telegram',
-      viewLinkedin: 'view linkedin',
-      viewGithub: 'view github'
+      sendMail: 'email',
+      openTelegram: 'telegram',
+      viewLinkedin: 'linkedin',
+      viewGithub: 'github'
     },
     footer: {
       built: 'Built with Nuxt'
